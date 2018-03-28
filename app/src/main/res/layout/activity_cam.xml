@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sanjuparihar.toolbox.Cam">
+
+    <TextureView
+        android:id="@+id/textureview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/getpicture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/photocamera"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/viewPhotos"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/viewgallery"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <Button
+        android:id="@+id/RecordVideo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:layout_toLeftOf="@+id/getpicture"
+        android:layout_toStartOf="@+id/getpicture"
+        android:background="@drawable/videocamera" />
+<RelativeLayout
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_above="@+id/RecordVideo"
+    android:layout_alignLeft="@+id/RecordVideo"
+    android:layout_alignStart="@+id/RecordVideo">
+    <ImageButton
+        android:id="@+id/flash_on"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="visible"
+        android:background="@drawable/flash_on"
+        android:layout_below="@+id/flash_off"
+        android:layout_toRightOf="@+id/flash_off"
+        android:layout_toEndOf="@+id/flash_off" />
+    <ImageButton
+        android:id="@+id/flash_off"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/flash_off"
+        android:visibility="gone"
+        />
+</RelativeLayout>
+</RelativeLayout>
+

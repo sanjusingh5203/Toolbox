@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/goku"
+    android:orientation="vertical"
+    android:soundEffectsEnabled="true"
+    tools:context="com.example.sanjuparihar.toolbox.Browser">
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/snapchat"
+        android:layout_alignStart="@+id/snapchat"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="149dp"
+        android:background="@color/fb"
+        android:soundEffectsEnabled="true"
+        android:text="Facebook"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/flipkart"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/snapchat"
+        android:layout_alignBottom="@+id/snapchat"
+        android:layout_centerHorizontal="true"
+        android:background="#ffff00"
+        android:soundEffectsEnabled="true"
+        android:text="Flipkart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/instagram"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/youtube"
+        android:layout_alignBottom="@+id/youtube"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="?android:attr/colorBackground"
+        android:soundEffectsEnabled="true"
+        android:text="Instagram" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/search_url_home"
+            android:layout_width="315dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/search_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/search_button"
+            android:layout_toStartOf="@+id/search_button"
+            android:background="@color/cast_intro_overlay_background_color"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:hint="Enter URL......"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:soundEffectsEnabled="true"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@color/cast_expanded_controller_background_color"
+            android:textColorHint="@color/cast_expanded_controller_progress_text_color" />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.94"
+            android:background="@color/cast_intro_overlay_background_color"
+            android:keepScreenOn="false"
+            android:nextFocusRight="@color/black_overlay"
+            android:soundEffectsEnabled="true"
+            android:src="@android:drawable/ic_menu_search"
+            android:text="search"
+            app:srcCompat="@drawable/search" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/snapchat"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instagram"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="46dp"
+        android:layout_toLeftOf="@+id/flipkart"
+        android:layout_toStartOf="@+id/flipkart"
+        android:background="@android:color/holo_orange_light"
+        android:soundEffectsEnabled="true"
+        android:text="snapchat"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/youtube"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/facebook"
+        android:layout_alignBottom="@+id/facebook"
+        android:layout_toEndOf="@+id/snapchat"
+        android:layout_toRightOf="@+id/snapchat"
+        android:background="@android:color/holo_red_dark"
+        android:soundEffectsEnabled="true"
+        android:text="YouTube"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/flipkart"
+        android:layout_alignBottom="@+id/flipkart"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/holo_blue_bright"
+        android:soundEffectsEnabled="true"
+        android:text="Google"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_body_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cast_intro_overlay_background_color"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/qrcode"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@null"
+            android:foregroundGravity="left"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/qrcode"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/Home"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:foregroundGravity="center"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/home" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

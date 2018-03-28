@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sanjuparihar.toolbox.UrlSearch">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contextClickable="true"
+        android:orientation="horizontal"
+        android:soundEffectsEnabled="true"
+        android:touchscreenBlocksFocus="false"
+        android:weightSum="1"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+            android:id="@+id/search_url"
+            android:layout_width="502dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/search_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/search_button"
+            android:layout_toStartOf="@+id/search_button"
+            android:allowUndo="true"
+            android:autoLink="web"
+            android:background="@color/cast_intro_overlay_background_color"
+            android:contextClickable="true"
+            android:cursorVisible="true"
+            android:duplicateParentState="true"
+            android:editable="true"
+            android:ems="10"
+            android:filterTouchesWhenObscured="false"
+            android:hint="Enter URL......"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:soundEffectsEnabled="true"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@color/cast_expanded_controller_background_color"
+            android:textColorHint="@color/cast_expanded_controller_progress_text_color"
+            android:textDirection="ltr"
+            android:textIsSelectable="false"
+            android:layout_weight="0.78" />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/cast_intro_overlay_background_color"
+            android:nextFocusRight="@color/black_overlay"
+            android:soundEffectsEnabled="true"
+            android:src="@android:drawable/ic_menu_search"
+            android:text="search"
+            app:srcCompat="@drawable/search"
+            android:layout_weight="0.26" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/SearchWebSite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:soundEffectsEnabled="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/cast_intro_overlay_background_color"
+        android:gravity="bottom"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp">
+
+        <ImageButton
+            android:id="@+id/qrcode"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@null"
+            android:foregroundGravity="left"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/qrcode" />
+
+        <ImageButton
+            android:id="@+id/Home"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:foregroundGravity="center"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/home" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

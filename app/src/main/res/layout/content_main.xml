@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:soundEffectsEnabled="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sanjuparihar.toolbox.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/notePadBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/notepad"
+            android:isScrollContainer="false"
+            android:longClickable="?android:attr/windowFullscreen"
+            android:outlineProvider="bounds"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="@string/notebtn"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp" />
+
+        <Button
+            android:id="@+id/BrowserBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/browser"
+            android:isScrollContainer="false"
+            android:longClickable="?android:attr/windowFullscreen"
+            android:outlineProvider="bounds"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="Browser"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp" />
+
+        <Button
+            android:id="@+id/VideoPlayerbtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/mp3player"
+            android:isScrollContainer="false"
+            android:onClick="edit_user_info"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="music"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/newsbtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/news"
+            android:isScrollContainer="false"
+            android:longClickable="?android:attr/windowFullscreen"
+            android:outlineProvider="bounds"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="NEWS"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp" />
+
+
+
+        <Button
+            android:id="@+id/CamBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/camera"
+            android:isScrollContainer="false"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="@string/camera"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+
+        <Button
+            android:id="@+id/Vplayer"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/mediaplayer"
+            android:isScrollContainer="false"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="Videos"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp"
+            tools:text="Videos" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/CalculatorBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/calculator"
+            android:isScrollContainer="false"
+            android:outlineProvider="background"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="@string/calculator"
+            android:textColor="#000000"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp" />
+
+
+        <Button
+            android:id="@+id/GalleryBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/gallery"
+            android:isScrollContainer="false"
+            android:longClickable="?android:attr/windowFullscreen"
+            android:outlineProvider="bounds"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="Gallery"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp" />
+
+        <Button
+            android:id="@+id/FlashBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/flash"
+            android:isScrollContainer="false"
+            android:soundEffectsEnabled="true"
+            android:text="Torch"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/QRBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/scaner"
+            android:isScrollContainer="false"
+            android:outlineProvider="background"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="QRcode"
+            android:textColor="#000000"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp" />
+
+
+        <Button
+            android:id="@+id/filemanager"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/paint_icon"
+            android:isScrollContainer="false"
+            android:longClickable="?android:attr/windowFullscreen"
+            android:outlineProvider="bounds"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="drawing"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp" />
+
+        <Button
+            android:id="@+id/tictactoe"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/tictactoe"
+            android:isScrollContainer="false"
+            android:longClickable="?android:attr/windowFullscreen"
+            android:outlineProvider="bounds"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="tic tac toe" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/Screenrecorder"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableTop="@drawable/startrecording"
+            android:isScrollContainer="false"
+            android:outlineProvider="background"
+            android:paddingBottom="1dp"
+            android:soundEffectsEnabled="true"
+            android:text="SRecorder"
+            android:textColor="#000000"
+            tools:background="@android:color/background_light"
+            tools:elevation="0dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

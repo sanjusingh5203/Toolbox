@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sanjuparihar.toolbox.UrlSearch">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contextClickable="true"
+        android:orientation="horizontal"
+        android:soundEffectsEnabled="true"
+        android:touchscreenBlocksFocus="false"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/Home"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/cast_intro_overlay_background_color"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/home" />
+
+        <EditText
+            android:id="@+id/search_url"
+            android:layout_width="639dp"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/search_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/search_button"
+            android:layout_toStartOf="@+id/search_button"
+            android:allowUndo="true"
+            android:autoLink="web"
+            android:background="@color/cast_intro_overlay_background_color"
+            android:contextClickable="true"
+            android:cursorVisible="true"
+            android:duplicateParentState="true"
+            android:editable="true"
+            android:ems="10"
+            android:filterTouchesWhenObscured="false"
+            android:hint="Enter URL......"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:soundEffectsEnabled="true"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@color/cast_expanded_controller_background_color"
+            android:textColorHint="@color/cast_expanded_controller_progress_text_color"
+            android:textDirection="ltr"
+            android:textIsSelectable="false" />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/cast_intro_overlay_background_color"
+            android:nextFocusRight="@color/black_overlay"
+            android:soundEffectsEnabled="true"
+            android:src="@android:drawable/ic_menu_search"
+            android:text="search"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/SearchWebSite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:soundEffectsEnabled="true" />
+
+</RelativeLayout>

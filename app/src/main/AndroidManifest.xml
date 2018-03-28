@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sanjuparihar.toolbox">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.Camera" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera2.full" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <permission android:name="android.permission.FLASHLIGHT" />
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <receiver android:name="com.android.alarmmanagertest.OnAlarmReceiver" />
+
+    <service android:name="com.android.alarmmanagertest.AlarmService" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/splash_image"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Flash"
+            android:label="Flash"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Calculator"
+            android:label="Calculator"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Audioplayer"
+            android:label="Audioplayer"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MusicService" />
+
+        <activity
+            android:name=".Cam"
+            android:label="Camera"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".NotePad"
+            android:label="NotePad"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NoteActivity"
+            android:label="new note"
+            android:parentActivityName=".NotePad" />
+        <activity
+            android:name=".Browser"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".WelcomeBrowser"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".UrlSearch"
+            android:parentActivityName=".Browser"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".VideoPlayer"
+            android:configChanges="orientation|screenSize"
+            android:label="Videos"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".play_video"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".VideoPlayer"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PhotoGallery"
+            android:configChanges="orientation|screenSize"
+            android:label="photo Gallery"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AlbumActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".GalleryPreview"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".QRScanner"
+            android:label="QR Barcode scanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OnlineMusic"
+            android:parentActivityName=".Audioplayer"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Filemanager"
+            android:label="File manager" />
+        <activity
+            android:name=".TicTacToe"
+            android:label="TIC TAC TOE"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".News"
+            android:label="NEWS"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailsActivity"
+            android:label="NEWS"
+            android:parentActivityName=".News" />
+        <activity
+            android:name=".ScreenRecorder"
+            android:label="SCREEN RECORDER"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SnakeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        </activity>
+
+        <activity android:name=".Drawing"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>

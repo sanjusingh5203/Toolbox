@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    tools:context="com.example.sanjuparihar.calculator.Calculator"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:padding="7dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:id="@+id/resultArea"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        android:soundEffectsEnabled="true"
+        android:numeric="signed|integer|decimal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#f8f8f8"
+        android:allowUndo="false"
+        android:autoText="false"
+        android:cursorVisible="true"
+        android:editable="true"
+        android:elegantTextHeight="false"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:padding="5dp"
+        android:textSize="30sp"
+        android:clickable="true"
+        android:layout_weight="0.63"
+        android:enabled="true" />
+             <TextView
+                 android:layout_width="340dp"
+                 android:layout_height="50dp"
+                 android:id="@+id/resultArea2"
+                 android:layout_weight="0.21"
+                 android:background="#f8f8f8"
+                 android:clickable="true"
+                 android:cursorVisible="true"
+                 android:editable="true"
+                 android:numeric="signed|integer|decimal"
+                 android:padding="5dp"
+                 android:textSize="20sp"
+                 android:layoutDirection="ltr" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn1"
+            android:text="@string/btn_1"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn2"
+            android:text="@string/nub2"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn3"
+            android:text="@string/num3"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btnadd"
+            android:text="@string/numadd"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn4"
+            android:text="@string/num4"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn5"
+            android:text="@string/num5"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn6"
+            android:text="@string/num6"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btnsub"
+            android:text="@string/numsub"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn7"
+            android:text="@string/num7"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn8"
+            android:text="@string/num8"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn9"
+            android:text="@string/num9"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btnmul"
+            android:text="@string/nummul"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn0"
+            android:text="@string/num0"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btndot"
+            android:text="@string/numdot"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btneql"
+            android:text="@string/eql"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btndiv"
+            android:text="@string/numdiv"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn11"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn12"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btn13"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/btnC"
+            android:text="@string/num14"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
